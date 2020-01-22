@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Maria Shvetsova](https://up.htmlacademy.ru/htmlcss/27/user/1225085).
-* Наставник: `Неизвестно`.
+* Наставник: [Даниил Долинчук](https://htmlacademy.ru/profile/fixten).
 
 ---
 
