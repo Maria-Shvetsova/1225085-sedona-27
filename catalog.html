@@ -21,37 +21,43 @@
     <main>
         <h1>Отели</h1>
         <section>
-            <h2>Фильтр отелей</h2>
+            <h2 class="visually-hidden">Фильтр отелей</h2>
             <form action="https://echo.htmlacademy.ru/courses" method="post">
-              <p><i>Инфраструктура</i></p>
-              <label>
-                <input type="radio" name="" value="бассейн" checked> Бассейн
-              </label>
-              <br>
-              <label>
-                <input type="radio" name="" value="парковка"> Парковка
-              </label>
-              <br>
-              <label>
-                <input type="radio" name="" value="wi-fi"> Wi-fi
-              </label>
-              <p><i>Тип жилья</i></p>
-              <label>
-                <input type="radio" name="" value="гостиница" checked> Гостиница
-              </label>
-              <br>
-              <label>
-                <input type="radio" name="" value="мотель" checked> мотель
-              </label>
-              <br>
-              <label>
-                <input type="radio" name="" value="апартаменты" checked> апартаменты
-              </label>
-              <br>
-              стоимость в сутки (р):
-              от 1<input type="range" min="0" max="3000">до 3000
-              <br>
-              <input type="submit" value="Показать">
+              <fieldset>
+                <p><i>Инфраструктура</i></p>
+                <label>
+                  <input type="radio" name="" value="бассейн" checked> Бассейн
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="" value="парковка"> Парковка
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="" value="wi-fi"> Wi-fi
+                </label>
+              </fieldset>
+              <fieldset>
+                <p><i>Тип жилья</i></p>
+                <label>
+                  <input type="radio" name="" value="гостиница" checked> Гостиница
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="" value="мотель" checked> мотель
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="" value="апартаменты" checked> апартаменты
+                </label>
+                <br>
+              </fieldset>
+              <fieldset>
+                стоимость в сутки (р):
+                от 1<input type="range" min="0" max="3000">до 3000
+                <br>
+                <input type="submit" value="Показать">
+              </fieldset>
             </form>
         </section>
           <section>

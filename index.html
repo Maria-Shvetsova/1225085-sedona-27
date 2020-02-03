@@ -25,7 +25,7 @@
           <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           <section>
-            <h2>Преимущества</h2>
+            <h2 class="visually-hidden">Преимущества</h2>
             <ul>
               <li>
                 <h3>Настоящий городок</h3>
@@ -54,7 +54,7 @@
             </ul>
           </section>
           <section>
-            <h2>Преимущества-2</h2>
+            <h2 class="visually-hidden">Преимущества-2</h2">
             <ul>
               <li>
                 <a>
@@ -82,22 +82,29 @@
           <section>
             <h2>Заинтересовались?</h2>
             <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
-            <form action="#"; method="post" enctupe="multipart/form-data">
-              поиск гостиницы в Седоне
-              <br>
-              Дата заезда
-              <input type="date" name="date">
-              <br>
-              Дата выезда
-              <input type="date" name="date">
-              <br>
-              Взрослые
-              <input type="text" name="#">
-              <br>
-              Дети
-              <input type="text" name="#">
-              <br>
-              <input type="button" value="Найти">
+            <form action="https://echo.htmlacademy.ru/courses"; method="post">
+              <p>
+                <button type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+              </p>
+              <p>
+              <label for="date-in">Дата заезда</label>
+              <input type="date" id="date-in" name="date" value="2017-04-24">
+              </p>
+              <p>
+               <label for="date-out">Дата выезда</label>
+               <input type="date" id="date-out" name="date" value="2017-07-04">
+              </p>
+              <p>
+                <label for="number-adult">Взрослые</label>
+                <input type="number" id="number-adult" name="amount" value="2">
+              </p>
+              <p>
+                <label for="number-kids">Дети</label>
+                <input type="number" id="number-kids" name="amount" value="0">
+              </p>
+              <p>
+                <button type="submit">Найти</button>
+              </p>
               </form>
             <img src="img/map.png" width="1200" height="594" alt="Карта">
           </section>
