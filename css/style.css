@@ -1,0 +1,264 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #333333;
+    text-transform: uppercase;
+    background-image: url("img/background-photo.png");
+    background-color: white;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.button {
+    padding: 30px;
+    padding-right: 109px;
+    padding-left: 110px;
+    font: inherit;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: #766357;
+    border: none;
+  }
+  
+  .button:hover {
+    background-color: #604e43; 
+}
+    
+  .button:focus {
+    background-color: #503e33;
+}
+  
+   .button-2 {
+    padding: 15px;
+    padding-right: 180px;
+    padding-left: 180px;
+    font: inherit;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color:#81b3d2;
+    border: none;
+}
+
+  .button-2:hover {
+    background-color: #669ec0; 
+}
+    
+  .button-2:focus {
+    background-color: #5496bd;
+}
+
+  .main-navigation {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #000000;
+    background-color: white;
+}
+
+  .site-navigation {
+    list-style: none;
+}
+
+  .site-navigation a {
+    color: #000000;
+}
+
+  .site-navigation a:hover {
+    color: #81b3d2;
+}
+
+  .site-navigation a:focus {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.welcome {
+  padding: 20px;
+  margin: 20px auto;
+  width: 1200px;
+  height: 773px;
+  text-align: center;
+  background-color: #f9f6f3;
+  background-image: url("img/background-photo.png") no-repeat;
+  background-position: center;
+}
+
+  .features-list {
+    list-style: none;
+}
+
+  .feature-item {
+    text-align: center;
+}
+
+  .feature-item h3 {
+    font-size: 21px;
+    line-height: 21px;
+  }
+
+  .form-search {
+    color: black;
+}
+
+.form-search h2 {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.form-search div {
+    font: inherit;
+    text-align: center;
+
+}
+.form-search-item {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.hotel-list {
+  list-style: none;
+}
+
+.hotel-list h3 {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.hotel-list h3 a {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.hotel-list h3 a:hover {
+  color: #81b3d2;
+}
+
+.hotel-list h3 a:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.blue-button {
+    padding: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    text-align: left;
+    color: #ffffff;
+    vertical-align: middle;
+    background-color:#81b3d2;
+    border: none;
+}
+
+.blue-button:hover {
+  background-color: #669ec0; 
+}
+  
+.blue-button:focus {
+  background-color: #5496bd;
+}
+
+.brown-button {
+  padding: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  text-align: left;
+  color: #ffffff;
+  vertical-align: middle;
+  background-color: #766357;
+  border: none;
+}
+
+.brown-button:hover {
+  background-color: #604e43; 
+}
+  
+.brown-button:focus {
+  background-color: #503e33;
+}
+
+.rate {
+  padding: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: left;
+  color: #666666;
+  vertical-align: middle;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+  .footer-contacts {
+    color: black;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+  .footer-social {
+    text-align: center;
+}
+  
+  .footer-social ul {
+    list-style: none;
+}
+  
+  .social-button {
+    padding: 10px;
+    list-style: none;
+    color: #ffffff;
+    background-color: #81b3d2;
+}
+
+  .footer-copyright {
+    text-align: right;
+    vertical-align: middle;
+}
+
+  .footer-copyright a {
+    color: black;
+}
+  
+  .footer-copyright a:hover {
+    color: #81b3d2;
+}
+
+  .footer-copyright a:focus {
+    color: #bdbbbc;
+}
