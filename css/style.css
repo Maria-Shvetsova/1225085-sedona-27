@@ -8,13 +8,17 @@ body {
     color: #333333;
     text-transform: uppercase;
     background-color: #f2f2f2;
-    background-position: top center;
-    background-repeat: no-repeat;
 }
 
 a {
     text-decoration: none;
 }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  }
 
 .visually-hidden {
     position: absolute;
@@ -24,18 +28,20 @@ a {
     margin: -1px;
 }
 
+.main-background {
+  background: url('../img/background-photo.png') center top;
+  background-repeat: no-repeat;
+}
+
 .button-form-main {
-    padding: 30px;
-    padding-right: 109px;
-    padding-left: 110px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 568px;
     font: inherit;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
-    text-align: center;
     color: #ffffff;
-    vertical-align: middle;
-    text-transform: uppercase;
     background-color: #766357;
     border: none;
   }
@@ -44,21 +50,20 @@ a {
     background-color: #604e43; 
 }
     
-  .button-form-main:focus {
+  .button-form-main:active {
+    color: rgba(255, 255, 255, 0.3)
     background-color: #503e33;
 }
   
    .button-form-find {
-    padding: 15px;
-    padding-right: 180px;
-    padding-left: 180px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 458px;
     font: inherit;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
-    text-align: center;
     color: #ffffff;
-    vertical-align: middle;
     text-transform: uppercase;
     background-color:#81b3d2;
     border: none;
@@ -68,15 +73,13 @@ a {
     background-color: #669ec0; 
 }
     
-  .button-form-find:focus {
+  .button-form-find:active {
+    color: rgba(255, 255, 255, 0.3);
     background-color: #5496bd;
 }
 
   .main-navigation {
-    font-size: 16px;
     font-weight: 700;
-    line-height: 26px;
-    list-style: none;
     color: #000000;
     background-color: #ffffff;
 }
@@ -89,48 +92,28 @@ a {
     color: #81b3d2;
 }
 
-  .main-navigation a:focus {
+  .main-navigation a:active {
     color: rgba(0, 0, 0, 0.3);
 }
 
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
-
 }
 
-.welcome {
-  margin-bottom: 80px;
-  padding: 0px;
-  width: 1200px;
-  height: 773px;
+  .welcome {
+    padding-top: 510px;
+    width: 1200px;
+    background: url('../img/polygon.png'), url('../img/welcome.png');
+    background-repeat: no-repeat;
+    background-position: center 400px, center 5px;
+}
+
+.welcome-text {
+  padding: 50px;
   text-align: center;
-  background-color: #f9f6f3;
-  background-position: center;
+  background-color: #ffffff;
 }
-.block1 {
-  width: 1200px;
-  margin: 0 auto;
-  background-image: url("../img/background-photo.png"); no-repeat;
-}
-
-.block2 {
-  background: url("../img/welcome.png") no-repeat;
-  background-position: 50% 50%;
-}
-
-.block3 {
-  height: 773px;
-  background: url("../img/polygon.png") no-repeat;
-  background-position: left bottom;
-}
-.block-4{
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
 
   .features-1 {
     display: flex;
@@ -219,7 +202,8 @@ a {
 
 .hotel-list {
   margin: 0;
-  padding-top: 0;
+  padding: 0;
+  width: 100%;
   background-color: #ffffff;
   list-style: none;
 }
@@ -227,20 +211,9 @@ a {
 .hotel-list .container {
   display: flex;
   justify-content: space-between;
-  width: 1200px;
-  height: 150px;
-}
-
-.hotel-list-photo {
-  width: 100px;
-  margin: 0;
-  padding-left: 50px;
   vertical-align: middle;
-}
-
-.hotel-list-description {
-  width: 700px;
-  margin: 0;
+  width: 100%;
+  height: 150px;
 }
 
 .rating {
@@ -250,100 +223,70 @@ a {
 .rating-number {
   margin: 0;
   padding: 5px;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
   text-align: left;
   color: #666666;
-  vertical-align: middle;
   background-color: #f2f2f2;
   border: none;
 }
 
-.hotel-list h3 {
+.hotel-list-name {
   font-size: 21px;
   line-height: 26px;
   color: #797474;
 }
 
-.hotel-list h3 a {
-  font-size: 21px;
-  line-height: 26px;
+.hotel-list-name a {
   color: #000000;
-  text-decoration: none;
 }
 
-.hotel-list h3 a:hover {
+.hotel-list-name a:hover {
   color: #81b3d2;
 }
 
-.hotel-list h3 a:focus {
+.hotel-list-name a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
 .blue-button {
-    padding: 5px;
-    padding-right: 15px;
-    padding-left: 15px;
-    font-size: 14px;
-    line-height: 21px;
+    padding: 5px 15px;
     font-weight: 700;
-    text-align: left;
     color: #ffffff;
-    vertical-align: middle;
     background-color:#81b3d2;
-    border: none;
 }
 
 .blue-button:hover {
   background-color: #669ec0; 
 }
   
-.blue-button:focus {
+.blue-button:active {
+  color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
 
 .brown-button {
-  padding: 5px;
-  padding-right: 15px;
-  padding-left: 15px;
-  font-size: 14px;
-  line-height: 21px;
+  padding: 5px 15px;
   font-weight: 700;
-  text-align: left;
   color: #ffffff;
-  vertical-align: middle;
   background-color: #766357;
-  border: none;
 }
 
 .brown-button:hover {
   background-color: #604e43; 
 }
   
-.brown-button:focus {
+.brown-button:active {
+  color: rgba(255, 255, 255, 0.3)
   background-color: #503e33;
 }
 
 .footer {
-  justify-content: space-between;
-  background-color: #ffffff;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  
-}
-
-.footer .container {
   display: flex;
-  width: 1200px;
-  height: 150px;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding-left: 20px;
 }
 
   .footer-contacts {
-    width: 400px;
-    margin: 0;
-    margin-left: 80px;
     color: #000000;
     font-weight: 700;
     font-size: 21px;
@@ -351,26 +294,16 @@ a {
 }
 
   .footer-social {
-    width: 170px;
-    text-align: center;
     display: flex;
-    justify-content: space-between;
     margin: 0;
     padding: 0p;
     list-style: none;
 }
 
-  .footer-social ul {
-    list-style: none;
-}
-  
   .social-button {
-    width: 40px;
-    height: 40px;
+    width: 46px;
+    height: 48px;
     margin: 3px;
-    padding: 5px;
-    list-style: none;
-    color: #ffffff;
     background-color: #81b3d2;
 }
 
@@ -389,6 +322,6 @@ a {
     color: #81b3d2;
 }
 
-  .footer-copyright a:focus {
+  .footer-copyright a:active {
     color: #bdbbbc;
 }

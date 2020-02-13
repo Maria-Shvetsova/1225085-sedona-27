@@ -19,7 +19,8 @@
       </nav>
     </header>
     <main class="container">
-        <h1>Отели</h1>
+        <h1 class="visually-hidden">Отели</h1>
+        <!--
         <section>
             <h2 class="visually-hidden">Фильтр отелей</h2>
             <form action="https://echo.htmlacademy.ru/courses" method="post">
@@ -60,17 +61,18 @@
               </fieldset>
             </form>
         </section>
+        -->
           <section>
             <h2 class="visually-hidden">Список отелей</h2>
-            <ul class="hotel-list">
-                <li class="container">
+            <ul>
+                <li class="hotel-list">
                 <div class="hotel-list-photo">
                   <a href="#">
                     <img src="img/hotel-picture_Amara Resort & Spa.png" width="135" height="90" alt="Amara Resort & Spa">
                     </a>
                 </div>
                 <div class="hotel-list-description">
-                    <h3>
+                    <h3 class="hotel-list-name">
                       <a href="#">
                        Amara Resort & Spa
                       </a>
@@ -93,14 +95,14 @@
                 </div>
                 </li>
                 <hr>
-                <li class="container">
+                <li class="hotel-list">
                   <div class="hotel-list-photo">
                   <a href="#">
                     <img src="img/hotel-picture_Desert Quail Inn.png" width="135" height="90" alt="Desert Quail Inn">
                     </a>
                   </div>
                   <div class="hotel-list-description">
-                    <h3>
+                    <h3 class="hotel-list-name">
                       <a href="#">
                         Desert Quail Inn
                       </a>
@@ -122,14 +124,14 @@
                   </div>
                   </li>
                   <hr>
-                  <li class="container">
+                  <li class="hotel-list">
                     <div class="hotel-list-photo">
                     <a href="#">
                       <img src="img/hotel-picture_Villas at Poco Diablo.png" width="135" height="90" alt="Villas at Poco Diablo">
                       </a>
                     </div>
                     <div class="hotel-list-description">
-                    <h3>
+                    <h3 class="hotel-list-name">
                       <a href="#">
                         Villas at Poco Diablo
                       </a>
@@ -153,8 +155,7 @@
             </ul>
           </section>
     </main>
-    <footer class="footer"> 
-      <div class="container">
+    <footer class="footer" class="container"> 
         <p class="footer-contacts">
           #visitsedona<br>
           Тел: +7(495) 666-02-66
@@ -170,8 +171,6 @@
         website by
         <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy"></a>
       </p>
-      </div>
-        
     </footer>
   </body>
 </html>
