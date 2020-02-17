@@ -10,6 +10,10 @@ body {
     background-color: #f2f2f2;
 }
 
+header {
+  position: relative;
+}
+
 a {
     text-decoration: none;
 }
@@ -18,7 +22,22 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  }
+}
+
+button {
+    font-family: inherit;
+    text-transform: uppercase;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
 
 .visually-hidden {
     position: absolute;
@@ -29,14 +48,9 @@ ul {
 }
 
 .main-background {
-  background: url('../img/background-photo.png') center top;
+  background: url('../img/background-photo.png') center -30px;
   background-repeat: no-repeat;
   background-color: #f2f2f2;
-}
-
-.button {
-  font-family: inherit;
-  text-transform: uppercase;
 }
 
 .button-form-main {
@@ -84,6 +98,12 @@ ul {
     background-color: #5496bd;
 }
 
+.logo {
+  position: absolute;
+  top: 0;
+  left: 535px;
+}
+
   .main-navigation {
     display: flex;
     justify-content: space-around;
@@ -106,28 +126,21 @@ ul {
     color: rgba(0, 0, 0, 0.3);
 }
 
-  .logo {
-  position: absolute;
-  top: 0;
-}
-
   .container {
    width: 1200px;
    margin: 0 auto;
    padding: 0;
-   /*
    box-shadow: 
    -5px 0 15px -10px #797474,
    5px 0 15px -10px #797474;
-   */
 }
 
   .welcome {
-    padding-top: 532px;
+    padding-top: 502px;
     width: 100%;
     background: url('../img/polygon.png'), url('../img/welcome.png');
     background-repeat: no-repeat;
-    background-position: center 475px, center 105px;
+    background-position: center 445px, center 73px;
 }
 
 .welcome-text {
@@ -200,18 +213,25 @@ ul {
     line-height: 21px;
   }
 
-  .form-search {
+  .form-1 {
+    display: none
+  }
+
+  .search {
+    margin: 0;
+    padding-top: 50px;
     color: #000000;
     background-color: #ffffff;
 }
 
-.form-search h2 {
+.search h2 {
     font-size: 30px;
     line-height: 36px;
     text-align: center;
 }
 
-.form-search div {
+.search-text {
+    padding-bottom: 50px;
     font: inherit;
     text-align: center;
 
@@ -242,28 +262,27 @@ ul {
   height: 1px;
 }
 
-.rating {
-  width: 100px;
-}
-
-.rating-number {
-  margin: 0;
-  padding: 0px;
-  text-align: left;
-  color: #666666;
-  background-color: #f2f2f2;
-  border: none;
+.hotel-list-photo {
+  padding-left: 80px;
+  width: 165px;
 }
 
 .hotel-list-description {
-  
+  display: flex;
+  align-self: flex-start;
+  width: 760px;
 }
 
 .hotel-list-name {
-  width: 800px;
+  display: block;
   font-size: 21px;
   line-height: 26px;
   color: #797474;
+}
+
+.hotel-list-info {
+  display: block;
+  padding: 3px;
 }
 
 .hotel-list-name a {
@@ -276,11 +295,6 @@ ul {
 
 .hotel-list-name a:active {
   color: rgba(0, 0, 0, 0.3);
-}
-
-.hotel-list-photo {
-  padding-left: 80px;
-  width: 165px;
 }
 
 .blue-button {
@@ -315,11 +329,33 @@ ul {
   background-color: #503e33;
 }
 
+.rating {
+  display: block;
+  padding-left: 10px;
+  width: 100px;
+}
+
+.rating-stars {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 50px;
+
+}
+
+.rating-number {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #666666;
+  background-color: #f2f2f2;
+  border: none;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 36px;
+  padding-bottom: 36px;
   align-items: center;
   background-color: #ffffff;
   opacity: 0.9;
@@ -328,7 +364,7 @@ ul {
 
   .footer-contacts {
     color: #000000;
-    padding-left: 100px;
+    padding-left: 132px;
     font-weight: 700;
     font-size: 21px;
     line-height: 26px;
@@ -351,16 +387,35 @@ ul {
     background-color: #81b3d2;
 }
 
+  .social-button:hover {
+    background-color: #669ec0;
+  }
+
+  .social-button:active {
+    background-color: #669ec0;
+  }
+
+  .social-button a: {
+    background-color: #669ec0;
+}
+
+  .social-button a:hover {
+    background-color: #669ec0;
+}
+
+  .social-button a:active {
+    opacity: 0.7;
+    background-color: #669ec0;
+}
+
   .footer-copyright {
     display: flex;
     align-items: center;
-    padding-right: 100px;
-    
-    
+    padding-right: 100px; 
 }
 
   .footer-copyright a {
-    color: #000000;
+    padding-top: 7px;
 }
   
   .footer-copyright a:hover {
@@ -369,4 +424,7 @@ ul {
 
   .footer-copyright a:active {
     color: #bdbbbc;
+}
+.footer-website{
+  padding-right: 10px;
 }
