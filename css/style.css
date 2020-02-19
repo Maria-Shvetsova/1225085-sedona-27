@@ -127,8 +127,8 @@ p {
    width: 1200px;
    margin: 0 auto;
    padding: 0;
-   box-shadow: 
    /*
+   box-shadow: 
    -5px 0 15px -10px #797474,
    5px 0 15px -10px #797474;
    */
@@ -334,7 +334,7 @@ p {
 }
   
 .brown-button:active {
-  color: rgba(255, 255, 255, 0.3)
+  color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
 
@@ -378,11 +378,12 @@ p {
 
   .footer-social {
     display: flex; 
+    flex-wrap: wrap;
 }
 
   .social-button {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     width: 46px;
     height: 48px;
@@ -401,8 +402,8 @@ p {
     background-color: #669ec0;
   }
 
-  .social-button a: {
-    background-color: #669ec0;
+  .social-button a {
+    background-color: rgba(255, 255, 255, 0);
 }
 
   .social-button a:hover {
@@ -422,14 +423,15 @@ p {
 
   .footer-copyright a {
     padding-top: 7px;
+    fill: #231f20;
 }
   
-  .footer-copyright a:hover {
-    
+  .footer-copyright a:hover path {
+    fill: #81b3d2;
 }
 
-  .footer-copyright a:active {
-    
+  .footer-copyright a:active path {
+    fill: #bdbbbc;
 }
 .footer-website{
   padding-right: 10px;
