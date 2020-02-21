@@ -29,11 +29,10 @@
             <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           </div>
           </section>
-          <!--
           <section class="features-1">
             <h2 class="visually-hidden">Преимущества</h2>
             <div class="features-1-text">
-                <h3>Настоящий городок</h3>
+                <h3>Настоящий<br>городок</h3>
                 <p>— №1 —</p>
                 <p>Седона — не аттракцион для туристов, 
                 <br>
@@ -45,33 +44,31 @@
             <h2 class="visually-hidden">Преимущества</h2>
             <ul class="features-list-1">
               <li class="feature-item-1">
-                <a>
                   <img src="img/icon-1.svg" width="75" height="72">
-                </a>
                 <h3>Жилье</h3>
-                <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                <p>Рекомендуем пожить в настоящем<br>мотеле, всё как в кино!</p>
               </li>
               <li class="feature-item-1">
                 <a>
                   <img src="img/icon-3.svg" width="74" height="70">
                 </a>
                 <h3>Еда</h3>
-                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <p>Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
               </li>
               <li class="feature-item-1">
                 <a>
                   <img src="img/icon-2.svg" width="64" height="76">
                 </a>
                 <h3>Сувениры</h3>
-                <p>Не только китайского, но и местного производства!</p>
+                <p>Не только китайского, но и местного<br>производства!</p>
               </li>
             </ul>
           </section>
           <section class="features-1">
             <h2 class="visually-hidden">Преимущества</h2>
               <img src="img/feature-picture-2.png" width="800" height="256">
-              <div>
-                <h3>Там есть мост Дьявола</h3>
+              <div class="features-1-text">
+                <h3>Там есть<br>мост Дьявола</h3>
                 <p>— №2 —</p>
                 <p>Да, по нему можно пройти, если, конечно, 
                 <br>
@@ -84,23 +81,22 @@
               <li class="feature-item-2">
                 <h3>Небольшая<br>
                   площадь</h3>
-                <p>— №3 —</p>
-                <p>Все достопримечательности находятся близко</p>
+                <p class="feature-item-2-number">— №3 —</p>
+                <p>Все достопримечательности<br>находятся близко</p>
               </li>
               <li class="feature-item-2">
                 <h3>Красивая<br>
                   дорога</h3>
-                <p>— №4 —</p>
-                <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                <p class="feature-item-2-number">— №4 —</p>
+                <p>Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
               <li class="feature-item-2">
                   <h3>Мало<br>
                     туристов</h3>
-                  <p>— №5 —</p>
-                  <p>Большинство едет в Гранд Каньон и толпится там</p>
+                  <p class="feature-item-2-number">— №5 —</p>
+                  <p>Большинство едет в Гранд Каньон<br>и толпится там</p>
               </li>
             </ul>
           </section>
-          -->
           <section class="search">
             <h2>Заинтересовались?</h2>
             <p class="search-text">Укажите предполагаемые даты поездки,<br>
@@ -108,20 +104,24 @@
             </p>
             <button class="button-form-main" type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
             <form  class="form-main" action="https://echo.htmlacademy.ru/courses" method="post">
-              <p class="form-search-item">
-              <label for="date-in">Дата заезда:</label>
-              <input type="date" id="date-in" name="date-check-in" value="2017-04-24">
-              </p>
-              <p class="form-search-item">
-               <label for="date-out">Дата выезда:</label>
-               <input type="date" id="date-out" name="date-check-out" value="2017-07-04">
-              </p>
-              <p class="form-search-item">
-                <label for="number-adult">Взрослые:</label>
-                <input type="number" id="number-adult" name="amount-adult" value="2">
-                <label for="number-kids">Дети:</label>
-                <input type="number" id="number-kids" name="amount-kids" value="0">
-              </p>
+              <div class="form-search-item">
+                <label for="date-in">Дата заезда:</label>
+                <input class="form-search-check" type="date" id="date-in" name="date-check-in" value="2017-04-24">
+              </div>
+              <div class="form-search-item">
+                <label for="date-out">Дата выезда:</label>
+                <input class="form-search-check" type="date" id="date-out" name="date-check-out" value="2017-07-04">
+              </div>
+            <div class="form-search-item">
+                <p>
+                <label for="number-adult" class="form-search-adult">Взрослые:</label>
+                <input class="form-search-number" type="number" id="number-adult" name="amount-adult" value="2">
+                </p>
+                <p>
+                <label for="number-kids" class="form-search-kids">Дети:</label>
+                <input class="form-search-number" type="number" id="number-kids" name="amount-kids" value="0">
+                </p>
+            </div>
                 <button class="button-form-find" type="submit">Найти</button>
               </form>
             <img src="img/map.png" width="1200" height="594" alt="Карта">
@@ -134,9 +134,9 @@
           </p>
         <div>
         <ul class="footer-social"> 
-          <li class="social-button"><a href="#"><img src="img/fb-icon.svg" alt="facebook"></a></li>
-          <li class="social-button"><a href="#"><img src="img/twitter.svg" alt="twitter"></a></li>
-          <li class="social-button"><a href="#"><img src="img/youtube.svg" alt="youtube"></a></li>
+          <li class="social"><a href="#" class="social-button"><img src="img/fb-icon.svg" alt="facebook"></a></li>
+          <li class="social"><a href="#" class="social-button"><img src="img/twitter.svg" alt="twitter"></a></li>
+          <li class="social"><a href="#" class="social-button"><img src="img/youtube.svg" alt="youtube"></a></li>
         </ul>
         </div>
         <p class="footer-copyright">
