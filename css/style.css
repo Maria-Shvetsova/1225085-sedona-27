@@ -575,6 +575,7 @@ p {
   .footer-copyright {
     display: flex;
     align-items: center;
+    margin-left: 50px;
     
 }
 
