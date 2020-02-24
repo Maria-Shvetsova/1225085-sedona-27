@@ -403,11 +403,11 @@ p {
   font-size: 26px;
 }
 
-/*
+
 .map {
-  
+  overflow: hidden; 
+  height: 473px;
 }
-*/
 
 .hotel-list {
   display: flex;
