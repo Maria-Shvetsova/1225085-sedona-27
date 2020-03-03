@@ -10,13 +10,13 @@
     <section class="container">
     <header>
       <nav>
-        <img src="img/logo-sedona.svg" width="140" height="71" class="logo" alt="Логотип Седоны">
+        <a href="index.html"><img src="img/logo-sedona.svg" width="140" height="71" class="logo" alt="Логотип Седоны"></a>
         <ul class="main-navigation">
           <li><a href="info.html">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
+          <li class="nav-start"><a href="#">Фото и видео</a></li>
           <li></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="catalog.html">Гостиницы</a></li>
+          <li class="nav-finish"><a href="#">Карта штата</a></li>
+          <li class="active"><a href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -39,7 +39,7 @@
                 <br>
                 там течет жизнь</p>
             </div>
-                <img src="img/feature-picture.png" width="800" height="256">
+                <img src="img/feature-picture.png" width="800" height="256" alt="Седона — настоящий городок">
           </section>
           <section>
             <h2 class="visually-hidden">Преимущества</h2>
@@ -67,7 +67,7 @@
           </section>
           <section class="features-1">
             <h2 class="visually-hidden">Преимущества</h2>
-              <img src="img/feature-picture-2.png" width="800" height="256">
+              <img src="img/feature-picture-2.png" width="800" height="256" alt="мост Дьявола">
               <div class="features-1-text">
                 <h3>Там есть<br>мост Дьявола</h3>
                 <p>— №2 —</p>
@@ -122,7 +122,7 @@
                 </label>
               </div>
             <div class="form-search-item">
-                <label for="number-adult" class="form-search-adult">Взрослые:
+                <label for="number-adult" class="form-search-adult-kids">Взрослые:
                 <input class="form-search-number adult" type="number" id="number-adult" name="amount-adult" value="2">
                   <div class="adult-up">
                   +
@@ -131,7 +131,7 @@
                   –
                   </div>
                 </label>
-                <label for="number-kids" class="form-search-kids">Дети:
+                <label for="number-kids" class="form-search-adult-kids">Дети:
                 <input class="form-search-number kids" type="number" id="number-kids" name="amount-kids" value="0">
                 <div class="kids-up">
                   +

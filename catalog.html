@@ -13,9 +13,9 @@
         <a href="index.html"><img src="img/logo-sedona.svg" width="140" height="71" class="logo" alt="Логотип Седоны"></a>
         <ul class="main-navigation">
           <li><a href="info.html">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
+          <li class="nav-start"><a href="#">Фото и видео</a></li>
           <li></li>
-          <li><a href="#">Карта штата</a></li>
+          <li class="nav-finish"><a href="#">Карта штата</a></li>
           <li class="active"><a href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
@@ -38,11 +38,13 @@
                   <li>
                     <label>
                     <input type="checkbox" name="" value="парковка"> Парковка
+                    <span class="checkbox-indicator"></span>
                    </label>
                   </li>
                   <li>
                     <label>
                     <input type="checkbox" name="" value="wi-fi"> Wi-fi
+                    <span class="checkbox-indicator"></span>
                     </label>
                   </li>
               </ul>
@@ -53,16 +55,19 @@
                 <li>
                 <label>
                   <input type="checkbox" name="" value="гостиница" checked> Гостиница
+                  <span class="checkbox-indicator"></span>
                 </label>
                 </li>
                 <li>
                 <label>
                   <input type="checkbox" name="" value="мотель" checked> мотель
+                  <span class="checkbox-indicator"></span>
                 </label>
                 </li>
                 <li>
                 <label>
                   <input type="checkbox" name="" value="апартаменты" checked> апартаменты
+                  <span class="checkbox-indicator"></span>
                 </label>
                 </li>
               </div>
@@ -86,34 +91,29 @@
         </div>
       </div>
         </section>
-      
           <section>
-            <div>
-              <ul class="search-results">
-                <li class="search-number">
-                  НАЙДЕНО:3
-                </li>
-                <li>
+            <div class="search-results">
+                <div class="search-number">
+                  НАЙДЕНО: 3
+                </div>
+                <div>
                   <p class="search-sort">сортировка:</p>
-                </li>
-                <li class="search-type">
+                </div>
+                <div class="search-type">
                   <p class="active"><a class="search-type" href="#">по цене</a></p>
                   <p><a class="search-type" href="#">по типу</a></p>
                   <p><a class="search-type" href="#">по рейтингу</a></p>
-                </li>
-                <li сlass="search-icons">
-                  <a href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#ababab" d="M5.5 0L0 10h11z"></path>
-                  </svg>
-                  </a>
-                  <a href="#">
-                  <svg  xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#ababab" d="M5.5 10L0 0h11"></path>
-                  </svg>
-                  </a>
-                </li>
-              </ul>
-              <hr class="hotel-list-line">
+                </div>
+                <div сlass="search-button">
+                  <button class="searsh-button-up-down">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 0L0 10h11z"/></svg>
+                  </button>
+                  <button class="searsh-button-up-down active"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg>
+                  </button>
+                </div>
             </div>
+            <hr class="hotel-list-line">
             <h2 class="visually-hidden">Список отелей</h2>
             <ul>
                 <li class="hotel-list">
