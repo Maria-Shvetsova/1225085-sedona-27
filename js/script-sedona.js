@@ -19,7 +19,7 @@ try {
   isStorageSupport = false;
 }
 
-link.addEventListener("click", function (evt) {
+click.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.add("form-main-show");
 
