@@ -20,35 +20,35 @@ try {
 }
 
 click.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.add("form-main-show");
-
-    
-    search.focus();
+    if (!popup.classList.contains("form-main-show")) {
+      popup.classList.add('form-main-show');
+    } else {
+      popup.classList.remove('form-main-show');
+    }
 });
 
 close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("form-main-show");
-  });
+     evt.preventDefault();
+     popup.classList.remove("form-main-show");
+   });
 
-  form.addEventListener("submit", function (evt) {
-    if (!date-check-in.value || !date-check-out.value || !amount-adult.value || !amount-kids.value) {
+   form.addEventListener("submit", function (evt) {
+     if (!datein.value || !dateout.value) {
       evt.preventDefault();
       console.log("Нужно ввести даты вьезда и выезда и количество взрослых и детей");
-    } else {
+     } else {
         if (isStorageSupport) {
-        localStorage.setItem("amount-adult", amount-adult.value);
-        localStorage.setItem("amount-kids", amount-kids.value);
-      }
-    }
-  });
+         localStorage.setItem("amount-adult", amount-adult.value);
+         localStorage.setItem("amount-kids", amount-kids.value);
+       }
+     }
+   });
 
-  window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (popup.classList.contains("form-main-show")) {
-        popup.classList.remove("form-main-show");
-      }
-    }
-  });
+   window.addEventListener("keydown", function (evt) {
+     if (evt.keyCode === 27) {
+       evt.preventDefault();
+       if (popup.classList.contains("form-main-show")) {
+         popup.classList.remove("form-main-show");
+       }
+     }
+   });

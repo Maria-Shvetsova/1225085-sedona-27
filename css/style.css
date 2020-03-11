@@ -111,6 +111,10 @@ p {
     
 }
 
+.welcome h1 {
+  font-size: 21px;
+}
+
 .welcome-text {
   padding: 50px;
   text-align: center;
