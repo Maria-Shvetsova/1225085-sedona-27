@@ -25,26 +25,11 @@ a {
     text-decoration: none;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 button {
     font-family: inherit;
     text-transform: uppercase;
 }
 
-h3 {
-  margin: 0;
-  padding: 0;
-}
-
-p {
-  margin: 0;
-  padding: 0;
-}
 
 .visually-hidden {
     position: absolute;
@@ -67,9 +52,11 @@ p {
 }
 
 .main-navigation {
+  margin: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  list-style: none;
   padding: 15px 72px;
   font-weight: 700;
   color: #000000;
@@ -111,14 +98,14 @@ p {
     
 }
 
-.welcome h1 {
-  font-size: 21px;
-}
-
 .welcome-text {
   padding: 50px;
   text-align: center;
   background-color: #ffffff;
+}
+
+.welcome h1 {
+  font-size: 21px;
 }
 
   .features-1 {
@@ -140,6 +127,8 @@ p {
   }
 
   .features-1-text h3 {
+
+    margin: 0;
     padding-top: 3px;
     padding-bottom: 18px;
     font-size: 21px;
@@ -147,8 +136,10 @@ p {
   }
 
   .features-1-text p {
+    margin: 0;
     line-height: 21px;
-    padding-bottom: 15px;
+    padding-top: 3px;
+    padding-bottom: 20px;
   }
 
   .features-list-1 {
@@ -170,12 +161,15 @@ p {
 }
 
   .feature-item-1 h3 {
+    margin: 0;
     padding: 20px;
     font-size: 21px;
     line-height: 21px;
   }
 
   .feature-item-1 p {
+    margin: 0;
+    padding: 0;
     line-height: 21px;
   }
 
@@ -196,12 +190,16 @@ p {
 }
 
   .feature-item-2 h3 {
+    margin: 0;
     font-size: 21px;
     line-height: 21px;
     padding-bottom: 20px;
   }
 
   .feature-item-2 p {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 15px;
     line-height: 21px;
   }
 
@@ -210,7 +208,7 @@ p {
   }
 
   .search {
-    padding-top: 50px;
+    padding-top: 30px;
     color: #000000;
     background-color: #ffffff;
     
@@ -223,7 +221,7 @@ p {
 }
 
 .search-text {
-    padding-bottom: 50px;
+    padding-bottom: 25px;
     text-align: center;
 }
 
@@ -281,15 +279,11 @@ p {
 
 @keyframes move {
   0% {
-    transform: translateY(-2000px);
+    transform: translateY(-500px);
   }
 
   70% {
-    transform: translateY(30px);
-  }
-
-  90% {
-    transform: translateY(-10px);
+    transform: translateY(0);
   }
 
   100% {
@@ -298,19 +292,7 @@ p {
 }
 
 
-/*
-@keyframes move {
-  50% {
-    bottom: 0px;
-  }
-  100% {
-    bottom: 316px;
-  }
-}
-*/
-
 .form-main {
-
   display: none;
   top: 0;
   left: 316px;
@@ -325,8 +307,11 @@ p {
 
 .form-main-show {
   display: block;
+  animation: move .8s;
+}
 
-  animation: move 0.6s;
+.open-form-wrap {
+  overflow: hidden;
 }
 
 .form-search-item {
@@ -484,6 +469,8 @@ p {
 }
 
 .hotels-search h3 {
+  margin: 0;
+  padding: 0;
   padding-bottom: 30px;
   font-size: 16;
   line-height: 16px;
@@ -567,6 +554,7 @@ p {
 .hotels-search li {
   margin-bottom: 20px;
   padding-left: 20px;
+  list-style: none;
 }
 
 .hotels-search-type {
@@ -740,6 +728,7 @@ p {
 }
 
 .search-type p {
+  margin: 0;
   padding-right: 30px;
 }
 
@@ -799,7 +788,12 @@ width: 40px;
   fill: #81b3d2;
 }
 
+.list {
+  margin: 0;
+  padding: 0;
+}
 .hotel-list {
+  margin: 0;
   display: flex;
   justify-content: flex-start;
   width: 100%;
@@ -819,6 +813,7 @@ width: 40px;
 }
 
 .hotel-list-photo {
+  margin: 0;
   padding-top: 5px;
   padding-left: 72px;
   width: 165px;
@@ -839,7 +834,9 @@ width: 40px;
 
 .hotel-list-name {
   display: block;
-  padding-bottom: 5px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 2px;
   font-size: 21px;
   color: #797474;
 }
@@ -863,14 +860,15 @@ width: 40px;
 }
 
 .hotel-list-category {
-  padding-bottom: 11px;
+  margin: 0;
+  padding: 0;
 }
 
 .blue-button {
-    padding: 5px 15px;
-    font-weight: 700;
-    color: #ffffff;
-    background-color:#81b3d2;
+  padding: 5px 15px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color:#81b3d2;
 }
 
 .blue-button:hover {
@@ -912,6 +910,8 @@ width: 40px;
 }
 
 .rating-number {
+  margin: 0;
+  padding: 0;
   text-align: center;
   color: #666666;
   background-color: #f2f2f2;
@@ -922,8 +922,8 @@ width: 40px;
   display: flex;
   justify-content: space-between;
   width: 967px;
-  padding-top: 36px;
-  padding-bottom: 36px;
+  padding-top: 22px;
+  padding-bottom: 22px;
   padding-left: 132px;
   padding-right: 101px;
   align-items: center;
@@ -937,8 +937,10 @@ width: 40px;
 }
 
   .footer-social {
+    margin: 0;
     display: flex; 
     flex-wrap: wrap;
+    list-style: none;
     margin-right: 55px;
 }
 

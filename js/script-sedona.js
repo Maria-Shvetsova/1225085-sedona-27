@@ -27,6 +27,8 @@ click.addEventListener("click", function (evt) {
     }
 });
 
+
+/*
 close.addEventListener("click", function (evt) {
      evt.preventDefault();
      popup.classList.remove("form-main-show");
@@ -44,6 +46,7 @@ close.addEventListener("click", function (evt) {
      }
    });
 
+
    window.addEventListener("keydown", function (evt) {
      if (evt.keyCode === 27) {
        evt.preventDefault();
@@ -52,3 +55,5 @@ close.addEventListener("click", function (evt) {
        }
      }
    });
+
+   */
