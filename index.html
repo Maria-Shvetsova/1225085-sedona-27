@@ -8,7 +8,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="main-background">
-  <section class="container">
+  <div class="container">
   <header>
       <nav>
         <a href="index.html"><img src="img/logo-sedona.svg" width="140" height="71" class="logo" alt="Логотип Седоны"></a>
@@ -126,24 +126,24 @@
               <div class="form-search-item">
                 <label for="number-adult" class="form-search-adult-kids">Взрослые:
                   <input class="form-search-number adult" type="number" id="number-adult" name="amount-adult" value="2">
-                  <div class="adult-up">
-                  +
-                  </div>
-                  <div class="adult-down">
-                  –
-                  </div>
                 </label>
+                  <p class="adult-up">
+                  +
+                  </p>
+                  <p class="adult-down">
+                  –
+                  </p>
                 <label for="number-kids" class="form-search-adult-kids">Дети:
                   <input class="form-search-number kids" type="number" id="number-kids" name="amount-kids" value="0">
-                  <div class="kids-up">
+                </label>
+                  <p class="kids-up">
                   +
-                  </div>
-                  <div class="kids-down">
+                  </p>
+                  <p class="kids-down">
                   –
-                  </div>
-              </label>
-            </div>
-                <button class="button-form-find" type="submit">Найти</button>
+                  </p>
+              </div>
+              <button class="button-form-find" type="submit">Найти</button>
               </form>
             </div>
               <div class="map">
@@ -173,7 +173,7 @@
           </a>
         </p>
 </footer>
-</section>
-    <script src="js/script-sedona.js"></script>
+</div>
+<script src="js/script-sedona.js"></script>
 </body>
 </html>
