@@ -21,11 +21,8 @@ try {
 
 click.addEventListener("click", function (evt) {
     if (!popup.classList.contains("form-main-show")) {
-      popup.classList.add("form-main-show");
+      popup.classList.add('form-main-show');
     } else {
-      popup.classList.remove("form-main-show");
+      popup.classList.remove('form-main-show');
     }
 });
-
-
-  
